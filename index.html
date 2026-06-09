@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>honey hour · cozy cafe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Floating particles canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">🍯 honey hour</span>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link active">home</a>
+      <a href="#scene" class="nav-link">vibes</a>
+      <a href="#player" class="nav-link">beats</a>
+      <a href="#about" class="nav-link">about</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+
+    <!-- Left: Anime rain window scene -->
+    <div class="window-scene">
+      <div class="window-frame">
+        <div class="window-cross-h"></div>
+        <div class="window-cross-v"></div>
+        <div class="rain-container" id="rainContainer"></div>
+        <div class="window-glow"></div>
+        <!-- Outside city lights -->
+        <div class="city-lights">
+          <div class="building b1"><span class="w"></span><span class="w"></span></div>
+          <div class="building b2"><span class="w"></span></div>
+          <div class="building b3"><span class="w"></span><span class="w"></span></div>
+          <div class="building b4"><span class="w"></span></div>
+          <div class="building b5"><span class="w"></span></div>
+        </div>
+      </div>
+      <!-- Windowsill -->
+      <div class="windowsill">
+        <!-- Cat -->
+        <div class="cat">
+          <div class="cat-body"></div>
+          <div class="cat-head">
+            <div class="cat-ear left"></div>
+            <div class="cat-ear right"></div>
+            <div class="cat-eyes">
+              <span></span><span></span>
+            </div>
+          </div>
+          <div class="cat-tail"></div>
+        </div>
+        <!-- Tea cup -->
+        <div class="tea-cup">
+          <div class="steam">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="cup-body"></div>
+          <div class="cup-handle"></div>
+          <div class="cup-saucer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Hero text -->
+    <div class="hero-text">
+      <p class="eyebrow">✦ &nbsp; h o n e y &nbsp; h o u r &nbsp; ✦</p>
+      <h1 class="hero-heading">you are<br/><em>home,</em><br/>dear.</h1>
+      <p class="hero-sub">let the rain stay outside 🍵<br/>this is your quiet corner.</p>
+      <div class="mood-tags">
+        <span class="tag">🍯 honey</span>
+        <span class="tag">🌧 rain</span>
+        <span class="tag">🐾 cozy</span>
+        <span class="tag">🍵 study</span>
+        <span class="tag">✦ lofi</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MUSIC PLAYER -->
+  <section class="player-section" id="player">
+    <div class="player-card">
+      <div class="vinyl" id="vinyl">
+        <div class="vinyl-inner"></div>
+        <div class="vinyl-center"></div>
+      </div>
+      <div class="player-info">
+        <p class="now-playing">now playing</p>
+        <h2 class="track-name">honey & rain</h2>
+        <p class="track-sub">lofi beats · 3:27</p>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+          <div class="progress-thumb" id="progressThumb"></div>
+        </div>
+        <div class="time-row">
+          <span id="currentTime">0:00</span>
+          <span>3:27</span>
+        </div>
+        <div class="controls">
+          <button class="ctrl-btn" id="prevBtn">⏮</button>
+          <button class="ctrl-btn play-btn" id="playBtn">▶</button>
+          <button class="ctrl-btn" id="nextBtn">⏭</button>
+        </div>
+      </div>
+    </div>
+    <p class="player-note">🎵 connect your own audio in script.js · royalty-free beats at youtube.com/audiolibrary</p>
+  </section>
+
+  <!-- COZY SCENE -->
+  <section class="scene-section" id="scene">
+    <div class="scene-label">
+      <p class="eyebrow">✦ &nbsp; t h e &nbsp; c o r n e r &nbsp; ✦</p>
+      <h2 class="section-heading">settle in.</h2>
+    </div>
+
+    <div class="scene-row">
+      <!-- Bookshelf card -->
+      <div class="scene-card">
+        <div class="bookshelf">
+          <div class="shelf">
+            <div class="book" style="--h:54px;--c:#7a3a10;"></div>
+            <div class="book" style="--h:44px;--c:#5a6a20;"></div>
+            <div class="book" style="--h:60px;--c:#8a4a18;"></div>
+            <div class="book" style="--h:38px;--c:#4a5a8a;"></div>
+            <div class="book" style="--h:50px;--c:#9a5a28;"></div>
+            <div class="book" style="--h:46px;--c:#6a3a14;"></div>
+            <div class="book" style="--h:42px;--c:#5a7a30;"></div>
+          </div>
+          <div class="shelf-board"></div>
+          <div class="shelf">
+            <div class="book" style="--h:48px;--c:#8a6a30;"></div>
+            <div class="book" style="--h:56px;--c:#5a3a10;"></div>
+            <div class="book" style="--h:40px;--c:#7a5a20;"></div>
+            <div class="book" style="--h:52px;--c:#4a3a6a;"></div>
+            <div class="book" style="--h:44px;--c:#6a4a18;"></div>
+            <div class="book" style="--h:36px;--c:#8a3a10;"></div>
+          </div>
+          <div class="shelf-board"></div>
+        </div>
+        <p class="card-label">📚 the shelf</p>
+      </div>
+
+      <!-- Candle card -->
+      <div class="scene-card candle-card">
+        <div class="candles">
+          <div class="candle tall">
+            <div class="flame"><div class="flame-inner"></div></div>
+            <div class="candle-body"></div>
+            <div class="candle-base"></div>
+            <div class="candle-glow"></div>
+          </div>
+          <div class="candle short">
+            <div class="flame"><div class="flame-inner"></div></div>
+            <div class="candle-body"></div>
+            <div class="candle-base"></div>
+            <div class="candle-glow"></div>
+          </div>
+          <div class="candle medium">
+            <div class="flame"><div class="flame-inner"></div></div>
+            <div class="candle-body"></div>
+            <div class="candle-base"></div>
+            <div class="candle-glow"></div>
+          </div>
+        </div>
+        <p class="card-label">🕯 the light</p>
+      </div>
+
+      <!-- Message card -->
+      <div class="scene-card message-card" id="about">
+        <p class="msg-quote">"the best study sessions<br/>smell like coffee<br/>and sound like rain."</p>
+        <div class="honey-divider">— 🍯 —</div>
+        <p class="msg-sub">a corner of the internet<br/>built for slow mornings<br/>and late night pages.</p>
+        <p class="card-label">✦ the vibe</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer class="footer">
+    <p>🍯 honey hour · made with warmth & rain</p>
+    <p class="footer-sub">"sohaaz 3am thoughts with cozy music is how dihaanas live 🦥."</p>
+    <p class="footer-copy">© sohaa · all vibes reserved 🍯</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
