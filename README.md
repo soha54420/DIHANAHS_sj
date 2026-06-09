@@ -2,6 +2,7 @@
 sosososo it's 3 am and gang is awake cuz caffeine cheers why not ehee it's how ideas come to life maybe soha and dihanahs as her project idea lovely eh!
 
 10/6/26 (sehri ka waqt eheehe jk)
+we're almost done with web design and all we just gotta add musik and host so rn shabha khair
 ## 🌸 Strugglehs
 
 If you're here because Git is throwing weird errors at you, welcome. You're not the first person and definitely won't be the last.
@@ -31,7 +32,9 @@ Trust me.
 
 Damn thnksto tht wind yt with 
 Coffee by the Sunset Road 👒 Lofi Cafe saved me n this commment worth translating 
+
 {
 أعلم أن هذا الوقت ثقيل جدا عليك،،،وأريدك فقط أن تتذكري أنني هنا،،،لست وحدك في هذا الالم،،،وسأكون بجانبك في كل خطوة حتي تتجاوزي هذه المحنة
 }
+
 Happy coding!
